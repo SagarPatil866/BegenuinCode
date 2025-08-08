@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mobile SDK Suite Android|iOS" verbose="10" parallel="tests" thread-count="1" allow-return-values="true">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+        <test name="Mobile SDK Community feed">
+            <classes>
+                <class name="Tests.MobileSDK">
+                    <methods>
+                        <include name="Verify_Community_Feed_SDK"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Mobile SDK Carousel feed">
+            <classes>
+                <class name="Tests.MobileSDK">
+                    <methods>
+                        <include name="Verify_Carousel_View"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Mobile SDK Brand feed">
+            <classes>
+                <class name="Tests.MobileSDK">
+                    <methods>
+                        <include name="Verify_Brand_Feed_View"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Mobile SDK Load feed">
+            <classes>
+                <class name="Tests.MobileSDK">
+                    <methods>
+                        <include name="Load_Sdk_Menu"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Verify spark Section">
+            <classes>
+                <class name="Tests.MobileSDK">
+                    <methods>
+                        <include name="Verify_Spark_Section"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+
+
+        <test name="Verify Populer field">
+            <classes>
+                <class name="Tests.MobileSDK">
+                    <methods>
+                        <include name="Verify_Populer_Field"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Verify Latest field">
+            <classes>
+                <class name="Tests.MobileSDK">
+                    <methods>
+                        <include name="Verify_Latest_Field"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Verify Search functionality in SDK">
+            <classes>
+                <class name="Tests.MobileSDK">
+                    <methods>
+                        <include name="Verify_Search_Field"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+        <test name="Verify community fields in SDK">
+            <classes>
+                <class name="Tests.MobileSDK">
+                    <methods>
+                        <include name="Verify_Community_Fields"></include>
+                    </methods>
+                </class>
+            </classes>
+        </test>
+
+    <test name="Verify Group fields in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="Verify_Group_Fields"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify post upload functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="Verify_Post"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify auto create community functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="create_Auto_Community"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to create Public Community For Admin SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="create_Public_Community_For_Admin"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to create Public Community For All Member in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="create_Public_Community_For_AllMember"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to create private Community For All Member in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="create_Private_Community_For_AllMember"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to create private Community For Admin in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="create_Private_Community_For_Admin"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Login with Email in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Login_With_Email"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Login with Phone in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Login_With_Phone_Number"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Logout Functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Logout"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Account Settings Functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Account_Setting"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Create a Group Manually By Everyone For All Community in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Create_Group_By_Everyone_For_AllCommunity"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Create a Group Manually By Everyone For Group Members Only in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Create_Group_By_Everyone_For_Group_Members_Only"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Create a Group Manually By Group Members For Group Members only in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Create_Group_By_Group_Members_For_Group_Members_Only"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Add Comment For Post in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Add_Comment_For_Post"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Add Video Comment For Post in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Add_Video_Comment_For_Post"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Delete Video Comment For Post in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Delete_Video_Comment_For_Post"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Add Audio Comment For Post in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Add_Audio_Comments_For_Post"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Delete Audio Comment For Post in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Delete_Audio_Comments_For_Post"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify User Profile in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_User_Profile"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Update User Name in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Update_User_Name"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Update User Bio in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Update_User_Bio"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Update User Social Profiles in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Update_User_SocialProfiles"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Repost Functionality For Specific Post in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Repost_Specific_Post_For_PopularField"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Repost Functionality For Specific Post in LatestField">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Repost_Specific_Post_For_LatestField"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Notification count in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Count_Notifications"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify To Record Post By Audio in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Record_Post_By_Audio"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify To Record Post By Text in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Record_Post_By_Text"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify To Record Post By Adjustable Scale in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Record_Post_By_Adjustable_Scale"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify To Record Post By Adjustable Time in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Record_Post_By_Adjustable_Time"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify To Record Text Post With Different Styles in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Record_Text_Post_With_Styles"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify To Mark Post As NotInterested in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Mark_Post_As_NotInterested"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify To UnMark Post As NotInterested in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_UnMark_Post_As_NotInterested"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify To Report Post Functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Report_Post_Functionality"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify To Joined Community Functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Joined_Community"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Wallet Functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Wallet_Functionality"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Auto Genrated Group in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Auto_Generated_Group"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Record Post With Question And Answer in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Record_Post_With_Question_And_Answer"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Carousel In Custom Feed in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Carousel_In_Custom_Feed"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Standard Wall In Custom Feed in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_StandardWall_In_Custom_Feed"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Video Comment After Two Minutes in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Video_Comment_After_Two_Minutes"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Audio Comment After Two Minutes in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Audio_Commnet_After_Two_Minutes"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Post Comments Functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Post_Comment"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Transcription Functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Transcription"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Verify Post With Torch Processing in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Post_With_Torch_Processing"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Gesture Functionality in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Gesture_Features"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Post With Five Minutes Dealy in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Post_With_Five_Minutes_Dealy"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Audio Post With Five Minutes Dealy in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Audio_Post_With_Five_Minutes_Dealy"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Verify Communities Post in Comments in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Communities_Posts_In_Comments"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Verify Sound Status in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Sound_Status"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Verify Record Text Post With Style in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_Record_Text_Post_With_Style"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify to Enable PIP Mode For Carousel in SDK">
+        <classes>
+            <class name="Tests.MobileSDK">
+                <methods>
+                    <include name="verify_To_Enable_PIP_Mode_For_Carousel"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,1837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Api Scenarios Suites" verbose="10" parallel="tests" thread-count="5" allow-return-values="true">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <parameter name="browser" value="firefox"/>
+    <!-- Verify Login Api Tests -->
+    <test name="Verify Login Api Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Login_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Demo Brand Profile Tests Api Verification -->
+    <test name="Api Demo Brand Profile Tests Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Brand_Profile_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Demo Brand Registration Api Verification -->
+    <test name="Api Demo Brand Registration Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Brand_Ragistration_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Demo Brand Registration Email Validation Api Verification -->
+    <test name="Api Demo Brand Registration Email Validation Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Brand_Ragistration_Email_Validation_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Demo Reset Password Api Verification -->
+    <test name="Api Demo Reset Password Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Reset_Password_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Demo Brand Invitation Api Verification -->
+    <test name="Api Demo Brand Invitation Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Brand_InvitationTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Guideline Api Verification -->
+    <test name="Api Community Guideline Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Guideline_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Member Api Verification -->
+    <test name="Api Community Member Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Member_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Api Verification -->
+    <test name="Api Loop Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api By User Api Verification -->
+    <test name="Api By User Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_By_User_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Brand Search Api Verification -->
+    <test name="Api Brand Search Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Brand_Search_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Api Verification -->
+    <test name="Api Community Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Handle Suggestion Api Verification -->
+    <test name="Api Community Handle Suggestion Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Handle_Suggestion_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Request Api Verification -->
+    <test name="Api Community Request Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Requests_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Pagination Api Verification -->
+    <test name="Api Loop Pagination Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Pagination_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Subscribers Api Verification -->
+    <test name="Api Loop Subscribers Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Subscribers_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Collaborators Api Verification -->
+    <test name="Api Loop Collaborators Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Collaborators_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Posts Api Verification -->
+    <test name="Api Loop Posts Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Posts_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Loop Api Verification -->
+    <test name="Api Community Loop Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Loop_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Check User Exists Api Verification -->
+    <test name="Api Check User Exists Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Check_User_Exists_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Mentions Api Verification -->
+    <test name="Api Mentions Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Mentions_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Fonts Verification -->
+    <test name="Api Fonts Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Fonts_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Get Sign URL Verification -->
+    <test name="Api Get Sign URL Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Sign_URL_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Get Brand User Verification -->
+    <test name="Api Get Brand User Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Gets_Brand_User_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Subdomain Suggestion Verification -->
+    <test name="Api Subdomain Suggestion Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Subdomain_Suggestion_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Brand Details Verification -->
+    <test name="Api Brand Details Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Brand_Details_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Resend Email Verification -->
+    <test name="Api Resend Email Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Resend_Email_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Get Dynamic CBR and Data Verification -->
+    <test name="Api Get Dynamic CBR and Data Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Dynamic_CBR_And_DataTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Nickname Suggestion Api Verification -->
+    <test name="Api Nickname Suggestion Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Nick_Name_Suggestion_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Validate Handle Verification -->
+    <test name="Api Validate Handle Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Validate_Handle_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Get Comment Verification -->
+    <test name="Api Get Comment Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Comment_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Get Payments Method Verification -->
+    <test name="Api Get Payments Method Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Payments_Method_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Transaction Verification -->
+    <test name="Api Transaction Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Transiction_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Get Wallet Balance Verification -->
+    <test name="Api Get Wallet Balance Api Verification">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Wallet_Balance_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Api Login Negative Tests -->
+    <test name="Verify Api Login Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Login_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Api Demo Brand Profile Negative Tests -->
+    <test name="Verify Api Demo Brand Profile Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Brand_Profile_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Api Demo Brand Registration Negative Tests -->
+    <test name="Verify Api Demo Brand Registration Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Brand_Registration_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Check User Exists Api Verification -->
+    <test name="Verify Api Demo Brand Registration Email Validation Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Brand_Registration_Email_Validation_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Demo Reset Password Negative Tests -->
+    <test name="Verify Api Demo Reset Password Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Reset_Password_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Demo Brand Invitation Negative Tests -->
+    <test name="Verify Api Demo Brand Invitation Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Demo_Brand_Invitation_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Guideline Negative Tests -->
+    <test name="Verify Api Community Guideline Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Guideline_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Member Negative Tests -->
+    <test name="Verify Api Community Member Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Member_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Negative Tests -->
+    <test name="Verify Api Loop Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api By User Negative Tests -->
+    <test name="Verify Api By User Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_By_User_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Brand Search Negative Tests -->
+    <test name="Verify Api Brand Search Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Brand_Search_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Negative Tests -->
+    <test name="Verify Api Community Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Handle Suggestion Negative Tests -->
+    <test name="Verify Api Community Handle Suggestion Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Handle_Suggestion_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Requests Negative Tests -->
+    <test name="Verify Api Community Requests Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Requests_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Pagination Negative Tests -->
+    <test name="Verify Api Loop Pagination Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Pagination_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Subscribers Negative Tests -->
+    <test name="Verify Api Loop Subscribers Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Subscribers_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Collaborators Negative Tests -->
+    <test name="Verify Api Loop Collaborators Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Collaborators_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Loop Posts Negative Tests -->
+    <test name="Verify Api Loop Posts Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Loop_Posts_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Community Loop Negative Tests -->
+    <test name="Verify Api Community Loop Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Loop_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Check User Exists Negative Tests -->
+    <test name="Verify Api Check User Exists Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Check_User_Exists_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Mentions Negative Tests -->
+    <test name="Verify Api Mentions Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Mentions_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api Fonts Negative Tests -->
+    <test name="Verify Api Fonts Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Fonts_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Get Sign URL functionality -->
+    <test name="Verify Api Get Sign URL Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Sign_URL_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Get S Brand User functionality -->
+    <test name="Verify Api Get S Brand User Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Gets_Brand_User_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Subdomain Suggestion functionality -->
+    <test name="Verify Api Subdomain Suggestion Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Subdomain_Suggestion_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Brand Details functionality -->
+    <test name="Verify Api Brand Details Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Brand_Details_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Resend Email functionality -->
+    <test name="Verify Api Resend Email Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Resend_Email_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Get Dynamic C Brand Data functionality -->
+    <test name="Verify Api Get Dynamic C Brand Data Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Dynamic_CBRand_Data_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Nick Name Suggestion functionality -->
+    <test name="Verify Api Nick Name Suggestion Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Nick_Name_Suggestion_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Validate Handle functionality -->
+    <test name="Verify Api Validate Handle Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Validate_Handle_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Get Comment functionality -->
+    <test name="Verify Api Get Comment Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Comment_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Get Payments Method functionality -->
+    <test name="Verify Api Get Payments Method Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Payments_Method_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Transaction functionality -->
+    <test name="Verify Api Transaction Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Transaction_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Negative Test for verifying Api Get Wallet Balance functionality -->
+    <test name="Verify Api Get Wallet Balance Negative Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Wallet_Balance_Negative_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for verifying Api Contact Us functionality -->
+    <test name="Verify Api Contact Us Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Contact_Us_Test">
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for verifying Api Update Notification Settings functionality -->
+    <test name="Verify Api Update Notification Settings Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Update_Notification_Settings_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for verifying Api Get User Settings functionality -->
+    <test name="Verify Api Get User Settings Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_User_Settings_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for verifying Api Get Latest Force Updated Version functionality -->
+    <test name="Verify Api Get Latest Force Updated Version Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Latest_Force_Updated_Version_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for verifying Api Third-Party Authentication functionality -->
+    <test name="Verify Api Third-Party Authentication Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_ThirdParty_Auth_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for verifying Api Send Download Link functionality -->
+    <test name="Verify Api Send Download Link Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Send_Download_Link_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for verifying Api Get Email Verification Status functionality -->
+    <test name="Verify Api Get Email Verification Status Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Email_Verification_Status_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for verifying Api Get Notification Count functionality -->
+    <test name="Verify Api Get Notification Count Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Notification_Count_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for verifying User Logout Api -->
+    <test name="Verify Api - User Logout">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Delete_User_Logout_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving user devices -->
+    <test name="Verify Api - Get User Devices">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_User_Devices_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Explore New data -->
+    <test name="Verify Api - Get Explore New">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Explore_New_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Community Categories -->
+    <test name="Verify Api - Get Community Categories">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Community_Categories_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Community Details -->
+    <test name="Verify Api - Get Community Details">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Community_Details_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Community Details with Parameters -->
+    <test name="Verify Api - Get Community Details with Parameters">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Community_Details_With_Params_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Communities by User ID -->
+    <test name="Verify Api - Get Communities by User ID">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Communities_By_UserId_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Home Communities by User ID -->
+    <test name="Verify Api - Get Home Communities by User ID">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Home_Communities_By_UserId_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving V4 Home Communities by User ID -->
+    <test name="Verify Api - Get V4 Home Communities by User ID">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_V4_Home_Communities_By_UserId_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Category List -->
+    <test name="Verify Api - Get Category List">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Category_List_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for delete a Community -->
+    <test name="Verify Api - Delete Community">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Delete_Community_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Community Videos -->
+    <test name="Verify Api - Get Community Videos">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Community_Videos_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving V4 Community Videos -->
+    <test name="Verify Api - Get V4 Community Videos">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_v4_Community_Videos_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Communities by Category -->
+    <test name="Verify Api - Get Communities by Category">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Communities_By_Category_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Trending Community Categories -->
+    <test name="Verify Api - Get Trending Community Categories">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Trending_Community_Categories_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for leaving a Community -->
+    <test name="Verify Api - Leave Community">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Leave_Community_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Featured Communities -->
+    <test name="Verify Api - Get Featured Communities">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Featured_Communities_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Trending Categories and Communities -->
+    <test name="Verify Api - Get Trending Categories and Communities">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Trending_Categories_Communities_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for posting Global Search Recent data -->
+    <test name="Verify Api - Post Global Search Recent">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Post_Global_Search_Recent_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Test for retrieving Global Search Recent data -->
+    <test name="Verify Api - Get Global Search Recent">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Global_Search_Recent_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Api Delete All Global Search Recent Tests-->
+    <test name="Verify Api Delete All Global Search Recent Tests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Delete_All_Global_Search_Recent_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <!-- Verifying search suggestions via POST Api -->
+    <test name="Verify Api - Post Search Suggestions">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Post_Search_Suggestions_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying feed menu retrieval via GET Api -->
+    <test name="Verify Api - Get Feed Menu">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Feed_Menu_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying v3 version of feed menu retrieval via GET Api -->
+    <test name="Verify Api - Get Feed Menu v3">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_v3_Feed_Menu_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying profile retrieval via POST Api -->
+    <test name="Verify Api - Post Get Profile">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Post_Get_Profile_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying email update via POST Api -->
+    <test name="Verify Api - Post Update Email">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Post_Update_Email_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying contact synchronization via POST Api -->
+    <test name="Verify Api - Post Contact Sync">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Post_Contact_Sync_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying mini profile retrieval via GET Api -->
+    <test name="Verify Api - Get Mini Profile">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Mini_Profile_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying new updates check via Api -->
+    <test name="Verify Api - Check New Updates">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Check_New_Updates_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying new message check via Api -->
+    <test name="Verify Api - Check New Messages">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Check_New_Message_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying nickname validation via Api -->
+    <test name="Verify Api - Validate Nickname">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Validate_Nickname_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying marking all notifications as read via Api -->
+    <test name="Verify Api - Mark All Notifications as Read">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Notification_Read_All_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying notification retrieval via Api -->
+    <test name="Verify Api - Get Notifications">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Notifications_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying profile community retrieval via Api -->
+    <test name="Verify Api - Get Profile Communities">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Profile_Communities_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying email sending functionality via Api -->
+    <test name="Verify Api - Send Email">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Send_Email_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying dynamic link creation via Api -->
+    <test name="Verify Api - Create Dynamic Link">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Create_Dynamic_Link_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying retrieval of featured loops via Api -->
+    <test name="Verify Api - Featured Loops">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Featured_loops"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying tutorial retrieval via Api -->
+    <test name="Verify Api - Get Tutorial">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Tutorial"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying conversation list retrieval via Api -->
+    <test name="Verify Api - Get Conversations List">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Conversations_List"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying if a group is empty via Api -->
+    <test name="Verify Api - Group is Empty">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Group_Is_GroupEmpty"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying repost destination retrieval via Api -->
+    <test name="Verify Api - Repost Destinations">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Repost_Destinations"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying community requests handling via Api -->
+    <test name="Verify Api - Community Requests">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Requests"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying featured communities retrieval via Api -->
+    <test name="Verify Api - Featured Communities">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Feature_Communities"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying category-based communities retrieval via Api -->
+    <test name="Verify Api - Categories Communities">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Categories_Communities"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying conversation details retrieval via Api -->
+    <test name="Verify Api - Conversation Details">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="Api_Conversation_Details"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying conversation members retrieval via Api -->
+    <test name="Verify Api - Conversation Members">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Conversation_Members"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying conversation subscribers retrieval via Api -->
+    <test name="Verify Api - Conversation Subscribers">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Conversation_Subscribers"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying conversation requesters retrieval via Api -->
+    <test name="Verify Api - Conversation Requesters">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Conversation_Requesters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying mentions retrieval via Api -->
+    <test name="Verify Api - Mentions">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Mentions"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying nickname queuing via Api -->
+    <test name="Verify Api - Queues Nickname">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Queues_Nickname"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying socket connections handling via Api -->
+    <test name="Verify Api - Socket Connections">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Socket_Connections"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verifying web metadata retrieval via Api -->
+    <test name="Verify Api - Web Meta Data">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Web_Meta_Data"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to verify brand details -->
+    <test name="Verify Api Brand Detail">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_BrandDetail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to verify brand guidelines -->
+    <test name="Verify Api Guidelines">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Brand_Guidelines"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to store UTM data -->
+    <test name="Verify Api Store UTM Data">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Store_UTM_Data"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to embed content -->
+    <test name="Verify Api Embed">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Embed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to post user topics -->
+    <test name="Verify Api Post User Topics">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Post_User_Topics"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to flag a user -->
+    <test name="Verify Api Post User Flag">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Post_User_Flag"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to get recent searches -->
+    <test name="Verify Api Search Recent">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Search_Recent_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to delete recent searches -->
+    <test name="Verify Api Search Recent Delete">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Search_Recent_Delete_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to validate video URL -->
+    <test name="Verify Api Video Validate URL">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Video_ValidateUrl_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to get users deep link metadata -->
+    <test name="Verify Api Users Deep Link Metadata">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Users_Deeplink_Metadata_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to delete user -->
+    <test name="Verify Api User Delete">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_User_Delete_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to get sitemap links -->
+    <test name="Verify Api Sitemap Links">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Sitemp_Links_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to get sitemap total count -->
+    <test name="Verify Api Sitemap Total Count">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Sitmap_Total_Count_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to get brand feed -->
+    <test name="Verify Api Get Brand Feed">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Brand_Feed_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to create video upload URL -->
+    <test name="Verify Api Video Create Upload URL">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Video_CreateUploadUrl_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to get default medium feed -->
+    <test name="Verify Api Default Medium Feed">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Default_Mediumfeed_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to check default health status -->
+    <test name="Verify Api Default Healthcheck">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Default_Healthcheck_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to check developer socket connection username -->
+    <test name="Verify Api Developer Socket Connection Username">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Developer_SocketConnection_Username_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to generate community loop data -->
+    <test name="Verify Api Community Generate Loop Data">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Genrateloopdata_Test"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Api to search top V3 -->
+    <test name="Verify Api V3 Search Top">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_V3_Search_Top"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify API Store UTM Data Test -->
+    <test name="Verify Api Store UTM Data Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Store_UTM_Data_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Embed Test -->
+    <test name="Verify Api Embed Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Embed_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify API Post User Topic Functionaliity -->
+    <test name="Verify Api Post User Topics Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Post_User_Topics_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Api Post User Flag Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Post_User_Flag_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify User DeepLink MetaData Test -->
+    <test name="Verify Api Users Deep Link Metadata Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Users_Deeplink_Metadata_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify User Delete API Functionality -->
+    <test name="Verify Api User Delete Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_User_Delete_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify API Sitemap Link Functionality -->
+    <test name="Verify Api Sitemap Links Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Sitemp_Links_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify SiteMap Total Count Functionality -->
+    <test name="Verify Api Sitemap Total Count Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Sitmap_Total_Count_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Get brand Feed Functionality -->
+    <test name="Verify Api Get Brand Feed Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Get_Brand_Feed_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Video Create Upload URL Functionality -->
+    <test name="Verify Api Video Create Upload URL Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Video_CreteUploadUrl_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify API Default Medium Feed Functionality -->
+    <test name="Verify Api Default Medium Feed Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Default_Mediumfeed_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Default HealthCheck Functionality -->
+    <test name="Verify Api Default Healthcheck Test">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Default_Healthcheck_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- API Developer Socket Connection Username Functionality -->
+    <test name="Verify Api for developer socketConnection username">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Developer_SocketConnection_Username_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify API for Community Generate Loop Data Functionality -->
+    <test name="Verify Api for Community generate loop data">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Community_Genrateloopdata_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Auto Summarize API Functionality -->
+    <test name="Verify Auto Summarize Api">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_AutoSummarize_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Generate Upload URL API Functionality -->
+    <test name="Verify Generate Upload URL Api">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_GenerateUploadUrl_Test" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify API For HealthCheck Test Functionality -->
+    <test name="Verify Api Default Healthcheck Test1">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Default_Healthcheck_Test1" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify API For Developer Socket Connection Username Validation -->
+    <test name="Verify Api for developer socketConnection username1">
+        <classes>
+            <class name="Tests.API">
+                <methods>
+                    <include name="API_Developer_SocketConnection_Username_Test1" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

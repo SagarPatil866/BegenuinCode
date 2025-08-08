@@ -1,0 +1,1292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BCC Scenarios Suite" verbose="10" parallel="tests" thread-count="4" allow-return-values="true">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <parameter name="browser" value="firefox"/>
+    <!--  Verify all elements and fields on the Login, Signup, and Forgot Password pages.-->
+    <test name="Verify all elements and fields on the Login, Signup, and Forgot Password pages.">
+        <classes>
+            <class name="Tests.BCC">
+                <methods>
+                    <include name="verifyAllTheFIeldsAndLabelsOnLoginPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--    Verify Signup, Login, and Forgot Password scenarios.-->
+    <test name="Verify Signup, Login, and Forgot Password scenarios.">
+        <classes>
+            <class name="Tests.BCC">
+                <methods>
+                    <include name="loginAndSignupScenarios"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--   Bug Scenarios Tests  -->
+
+    <!--Upload a video on Engage Page.-->
+    <test name="Upload a video on Engage">
+        <classes>
+            <class name="Tests.BUG">
+                <methods>
+                    <include name="uploadVideoOnEngage"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify search functionality when logging in under BCC.-->
+    <test name="Verify search functionality when logging in under BCC.">
+        <classes>
+            <class name="Tests.BUG">
+                <methods>
+                    <include name="verifySearchIsWorkingWhenloginUnderBCC"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify the Brand Switch search field.-->
+    <test name="Verify the Brand Switch search field.">
+        <classes>
+            <class name="Tests.BUG">
+                <methods>
+                    <include name="verifyBrandSwitchSearchField"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Update the headline of the Carousel Embed from Grow.-->
+    <test name="Update the headline of the Carousel Embed from Grow.">
+        <classes>
+            <class name="Tests.BUG">
+                <methods>
+                    <include name="updatingTheHeadlineOfCarouselEmbedFromGrow"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify the delete filter on Moderate.-->
+    <test name="Verify the delete filter on Moderate.">
+        <classes>
+            <class name="Tests.BUG">
+                <methods>
+                    <include name="verifyDeleteFilterOnModerate"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify that clicking on the same Brand Module page does not reload.-->
+    <test name="Verify that clicking on the same Brand Module page does not reload.">
+        <classes>
+            <class name="Tests.BUG">
+                <methods>
+                    <include name="verifyWhenClickingOnSameBrandModulePageShouldNotBeLoad"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Build Scenarios Tests-->
+    <!--Verify that all brand elements are present.-->
+    <test name="Verify that all brand elements are present.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="all_Brand_Elements_Present"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify the character limit for the mission statement.-->
+    <test name="Verify the character limit for the mission statement.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Character_Limit_On_Mission"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify the character limit for policies.-->
+    <test name="Verify the character limit for policies.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Character_Limit_On_Policies"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify the character limit for vision.-->
+    <test name="Verify the character limit for vision.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Character_Limit_On_Vision"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify the 300-character limit for the mission statement.-->
+    <test name="Verify the 300-character limit for the mission statement.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Character_Limit_On_Mission_Enter_300_Character"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify the character limit for working conditions.-->
+    <test name="Verify the character limit for working conditions.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Character_Limit_On_Working_Conditions"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify the character limit for the code of conduct.-->
+    <test name="Verify the character limit for the code of conduct.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Character_Limit_Of_Conduct"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify the character limit for "do's".-->
+    <test name="Verify the character limit for do as.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Character_Limit_Of_Do_As"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify the character limit for "don'ts".-->
+    <test name="Verify the character limit for don'ts.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Character_Limit_Of_Dont_As"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify retail network functionality.-->
+    <test name="Verify retail network functionality.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Retail_Network_Functionality"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Consumer Brand functionality.-->
+    <test name="Verify consumer brand functionality.">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Consumer_Brand_Functionality"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify functionality of retail network traffic range under 1M-->
+    <test name="Verify functionality of retail network traffic range under 1M">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Functionality_Of_Retail_Network_Traffic_Range_Selection_Under_1M"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--Verify functionality of retail network traffic range selecting 1m-5m-->
+    <test name="Verify functionality of retail network traffic range selection 1M-5M">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_The_Functionality_Of_Retail_Network_Traffic_Range_Selection_1M_5M"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--Verify functionality of retail network traffic range selection 5M-10M-->
+    <test name="Verify functionality of retail network traffic range selection 5M-10M">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_The_Functionality_Of_Retail_Network_Traffic_Range_Selection_5M_10m"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--Verify functionality of retail network traffic range selection more than 10M-->
+    <test name="Verify functionality of retail network traffic range selection more than 10M">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_The_Functionality_Of_Retail_Network_Traffic_Range_Selection_More_Than_10M"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--Verify redirection to the next section  -->
+    <test name="Verify redirection to the next section">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="next_Section_Redirection"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--Verify consumer brand addition  -->
+    <test name="Verify consumer brand addition">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="add_Consumer_Brand_Verification"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify add person for notice functionality   -->
+    <test name="Verify add person for notice functionality">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Add_Person_For_Notice"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--   Verify add person functionality for legal review -->
+    <test name="Verify add person functionality for legal review">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Add_Person_Functionality_For_Legal_Review"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify the functionality of brand type selection  -->
+    <test name="Verify the functionality of brand type selection">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="verify_Media_Brand_Functionality"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify notice team section on the Build Page -->
+    <test name="Verify notice team section">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="Verify_Notice_Team_Section"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify contact name Functionality -->
+    <test name="Verify contact name">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="Verify_Contact_Name"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify contact email Functionality  -->
+    <test name="Verify contact email">
+        <classes>
+            <class name="Tests.Build">
+                <methods>
+                    <include name="Verify_Contact_Email"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Embed Scenarios Functionality-->
+    <test name="Verify Embed Pages">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_Embed_Page"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Engage Scenarios Tests-->
+
+    <!--  Tests Case 1 :: Verifying that when Position = 1, then the offer status = Passed.  -->
+    <test name="Upload file">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="Upload_Video"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify Delete Video in activity Functionality  -->
+    <test name="Delete Video in activity">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="delete_Video_In_Activity"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--    Verify youtube handle in social import and settings-->
+    <test name="Verify youtube handle in social import and settings">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Youtube_Handle_In_social_Import_And_Settings"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify  Front End Tests Scenarios -->
+    <test name="Verify Frontend App and popular clickable">
+        <classes>
+            <class name="Tests.FEhome">
+                <methods>
+                    <include name="verify_Popular"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify Frontend App and Header is visible  -->
+    <test name="Verify Frontend App and Header is visible">
+        <classes>
+            <class name="Tests.FEhome">
+                <methods>
+                    <include name="verify_Header"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Download Button is Clickable and popup is visible  -->
+    <test name="Download Button is Clickable and popup is visible">
+        <classes>
+            <class name="Tests.FEhome">
+                <methods>
+                    <include name="verify_Download_Popup"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify LOGIN/SIGNUP in frontend  -->
+    <test name="LOGIN/SIGNUP in frontend">
+        <classes>
+            <class name="Tests.FEhome">
+                <methods>
+                    <include name="login_Or_Signup"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify Home Feed with 5 video-->
+    <test name="Home Feed with 5 video">
+        <classes>
+            <class name="Tests.FEhome">
+                <methods>
+                    <include name="home_Feed_With_5_Video"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Update Community Functionality -->
+    <test name="Update Community">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="update_Community"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify Manage Page Functionality-->
+    <test name="Verify the Manage Details Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Mange_Page"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify New Community Functionality-->
+    <test name="Create New Community On the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="create_New_Community"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify Community Details Functionality-->
+    <test name="Verify Community Details On the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Community_Details"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify Users Tab Functionality-->
+    <test name="Verify Users Tab On the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Users_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify All Users Functionality -->
+    <test name="Verify All Users Functionality on the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_All_Users_Page_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify Column Details Tab Functionality -->
+    <test name="Column Details Tab On the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="column_Details_Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify View Share Functionality  -->
+    <test name="Verify View Share Functionality On the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_View_Share_Functionality"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify reorder functionality in communities  -->
+    <test name="Verify reorder functionality in communities on the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="Verify_Reorder_Functionality_In_Communities"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify group section Functionality   -->
+    <test name="Verify group section on the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="Verify_Group_Section"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!-- Verify  Add New Creater Functionality  -->
+    <test name="Add New Creater On the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="Verify_User_Tab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- White Label Setting Scenarios -->
+
+    <!--  Tests Case 1 :: Verifying that when Position = 1, then the offer status = Passed.  -->
+    <test name="Verify White Label Setting on the WhitelabelSetting">
+        <classes>
+            <class name="Tests.WhitelabelSetting">
+                <methods>
+                    <include name="verify_White_Label_Setting"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify White Label Setting URL Functionality  -->
+    <test name="Verify White Label Setting URL on the WhitelabelSetting">
+        <classes>
+            <class name="Tests.WhitelabelSetting">
+                <methods>
+                    <include name="verify_White_Label_Setting_URL"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  verify White Label Setting URL For QA Environment  -->
+    <test name="verify White Label Setting URL For QA Environment">
+        <classes>
+            <class name="Tests.WhitelabelSetting">
+                <methods>
+                    <include name="verify_White_Label_Setting_URL_For_QA_Environment"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+<!--  Verify White Label Setting With Live Environment  -->
+    <test name="Verify White Label Setting With Live Environment">
+        <classes>
+            <class name="Tests.WhitelabelSetting">
+                <methods>
+                    <include name="verify_White_Label_Setting_With_Live_Environment"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <!-- Verify Brand Assert Page Functionality -->
+    <test name="Verify Brand Assert page">
+        <classes>
+            <class name="Tests.BCC">
+                <methods>
+                    <include name="verifyAfterEnterURL"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Brand Category Functionality -->
+    <test name="Verify Brand Assert page After Enter URL">
+        <classes>
+            <class name="Tests.BCC">
+                <methods>
+                    <include name="verify_brand_catagory"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify New Brand Category Functionality -->
+    <test name="Verify Brand Category Tab on the Brand Page">
+        <classes>
+            <class name="Tests.BCC">
+                <methods>
+                    <include name="new_catagory_verification"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Brand Details Functionality -->
+    <test name="Verify the Brands Tab on the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="Verify_Brands_Details"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Add Brand To Earn Functionality -->
+    <test name="Verify Add Brand To Earn on the Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="VerifyADDBrandToEarn"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Brand Created Functionality -->
+    <test name="Verify Brand Create on the Manage page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="VerifyBrandCreated"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Youtube HandleIn Social Import And Settings Functionality -->
+    <test name="Verify Youtube HandleIn Social Import And Settings on the Engage PAGE">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Youtube_Handle_In_social_Import_And_Settings"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify click On Comments Functionality-->
+    <test name="Verify Comments On Manage page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="clickOnCommentsTab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Comments Tab Functionality-->
+    <test name="Verify Comments Tab On Manage page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Comment_Tab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Delete Comments Functionality-->
+    <test name="Verify Delete Comments On Manage page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Delete_Comment"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Category Tab Functionality-->
+    <test name="Verify Category Tab on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="clickOnCategory"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Category Details Functionality-->
+    <test name="Verify Category Details on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Category_Tab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Add Topic Functionality-->
+    <test name="Verify Add Topic on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Add_Topic_Tab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Edit Topic Functionality-->
+    <test name="Verify Edit Topic on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Edit_Topic_Tab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Private Community Functionality-->
+    <test name="Verify the private community on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Create_Private_For_AllCommunity"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Private Community For Admin Functionality-->
+    <test name="Verify The Private Community For Admin on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Create_Private_For_Admin"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Public Community For Admin Functionality-->
+    <test name="Verify The Public Community For Admin on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Create_Public_For_Admin"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Public Community For All Community Functionality-->
+    <test name="Verify The Public Community For All Community on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Create_Public_For_AllCommunity"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Community in Ascending Order Functionality-->
+    <test name="Verify Community In Ascending Order on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Community_In_Ascending_Order"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Community In Descending Order Functionality-->
+    <test name="Verify Community In Descending Order on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Community_In_Descending_Order"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify The Pinned Community Functionality-->
+    <test name="Verify Pinned Community on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Pinned_Community"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Reorder Button Functionality-->
+    <test name="Verify Reorder Button on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Reorder_Community"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Date Created Functionality For Ascending Order-->
+    <test name="Verify Date Created for Ascending Order on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Date_Created_In_Ascending_Order"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Date Created Functionality On the Descending Order-->
+    <test name="Verify Date Created for Descending Order on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Date_Cretaed_In_Descending_Order"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Groups Functionality -->
+    <test name="Verify Groups Details  on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Groups_Tab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify to create new group for All Communities -->
+    <test name="Verify to create New Group for All Communities on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_To_Create_New_Group_For_ALLCommunities"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify to create new group for Group Members Only -->
+    <test name="Verify to create New Group for Group Members on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_To_Create_New_Group_For_GroupMember"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify to Create Group for Members Only -->
+    <test name="Verify to create Group for Members on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_create_Group_For_Members"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Posts Tab On Manage Page -->
+    <test name="Verify to click on posts tab on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_clickOnPosts"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Posts Tabs Functionality-->
+    <test name="Verify Post tab on Manage Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_Posts_Tab"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify to create new Post  Functionality-->
+    <test name="Verify To Create New Post On Upload Page">
+        <classes>
+            <class name="Tests.Manage">
+                <methods>
+                    <include name="verify_To_Create_New_Post"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Data Logs For Social Imports Functionality-->
+    <test name="Verify Data Logs For Social Imports On Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Data_Logs_For_SocialImport"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Data Logs For Uplods Functionality-->
+    <test name="Verify Data Logs For Uploads On Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Data_Logs_For_Uploads"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Data Logs For ClipIt Functionality-->
+    <test name="Verify Data Logs For ClipIt On Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Data_Logs_For_ClipIt"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Engage Page Functionality-->
+    <test name="Verify Engage Details On Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Engage_Page"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Edit Community Functionality-->
+    <test name="Verify Edit Community on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Edit_Community"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Edit Page Functionality-->
+    <test name="Verify Edit Group on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Edit_Group"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Videos Counts  Functionality-->
+    <test name="Verify Video Counts For All Community on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Video_Count_For_All_Community"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Video Counts Functionality-->
+    <test name="Verify Video Counts On the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Video_Counts"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Communities Functionality-->
+    <test name="Verify Communities Details on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Communities_Details_For_All_Page"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Embed Scenarios Functionality-->
+    <test name="Verify Embed Details on the Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_EmbedPage_Functionality"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to create new Embad Page Functionality-->
+    <test name="Verify to create new Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_New_Embad_Page"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to create Standard wall style  Page Functionality-->
+    <test name="Verify to create Standard Wall Style Embed view on Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_Embed_StandardWall_Style_For_EmbedView"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to create Feed Style For Embed View  Functionality-->
+    <test name="Verify to create Embed For Feed Style On  Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_Embed_FeedStyle_For_EmbedView"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to create Feed Style For PopUp View  Functionality-->
+    <test name="Verify to create Embed For Feed Style For PopUp View on Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_Embed_FeedStyle_For_PopUpView"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to create Carousel Style For Embed View  Functionality-->
+    <test name="Verify to create Embed For Carousel Style On  Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_Embed_Carousel_Style_For_EmbedView"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to create Carousel Style For PopUp View  Functionality-->
+    <test name="Verify to create Embed For Carousel Style For PopUp View on Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_Embed_Carousel_Style_For_PopUpView"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Import Video Functionality-->
+    <test name="Verify Import Video Details on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Import_Videos"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Social Imports Functionality-->
+    <test name="Verify Social Import Details on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Social_Imports"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Uploads Functionality-->
+    <test name="Verify Uploads details on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Uploads"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Clip It Functionality-->
+    <test name="Verify Clip It details on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Clip_It"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Upload YouTube Video for Clip It Functionality-->
+    <test name="Verify Upload Youtube Video for Clip it on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Upload_Youtube_Link_For_Clip_It"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!--Verify Upload Video For Clip It Functionality-->
+    <test name="Verify Upload Video for Clip it on the Engage Page">
+        <classes>
+            <class name="Tests.Engage">
+                <methods>
+                    <include name="verify_Upload_Video_For_Clip_It"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to Edit Embed Functionality For Brand Feed-->
+    <test name="Verify to Edit Embed For Brand Feed on Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_Edit_Embed_For_BrandFeed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to Edit Embed Functionality For Community Feed-->
+    <test name="Verify to Edit Embed For Coomunity Feed on Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_Edit_Embed_For_CommunityFeed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to Edit Embed Functionality For Group Feed-->
+    <test name="Verify to Edit Embed For Group Feed on Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_Edit_Embed_For_GroupFeed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to Create Duplicate Embed  For Brand Feed-->
+    <test name="Verify to Create Duplicate Embed For Brand Feed on Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_To_Create_Duplicate_Embed_For_BrandFeed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to Create Duplicate Embed  For Community Feed-->
+    <test name="Verify to Create Duplicate Embed For Community Feed on Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_To_Create_Duplicate_Embed_For_CommunityFeed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to Create Duplicate Embed  For Group Feed-->
+    <test name="Verify to Create Duplicate Embed For Group Feed on Embed Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_To_Create_Duplicate_Embed_For_Group_Feed"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify Off Site Page Functionality-->
+    <test name="Verify off site Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_OffSite_Page"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Verify to Create New Ad Functionality-->
+    <test name="Verify to Create New Ad On Off Site Page">
+        <classes>
+            <class name="Tests.Embed">
+                <methods>
+                    <include name="verify_To_Create_NewAdd"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

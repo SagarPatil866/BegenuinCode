@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Mobile Suite" verbose="10" parallel="tests" thread-count="1" allow-return-values="true">
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+
+    <test name="Verify Login Scenario">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Login_Page_Element"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Welcome Pages Scenario">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Welcome_Page_Instruction"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify Login with phone Number">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Login_Scenarios_With_Number"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Verify LogIn with Email">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Login_Scenario_With_Email"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="verify Icon present on Home Screen">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Icon_Present_On_Home_Screen"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="verify Create Community with Sign up">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Sign_Up_Scenario"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="verify Create Community with LogIn">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Community_Create_With_Login_Scenario"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="verify Create Community Automatically with LogIn">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Create_Auto_Community_Scenario"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="verify Create Loop with LogIn">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Create_Loop_Scenario"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="verify Auto Create Loop with LogIn">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Create_Auto_Loop_Scenario"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="verify Create Avatar">
+        <classes>
+            <class name="Tests.Mobile">
+                <methods>
+                    <include name="verify_Create_Avatar_Scenario"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
